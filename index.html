@@ -7,7 +7,655 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1 class="text-center w-1/2 bg-red-50 border-4 border-indigo-200 mt-20 ml-100 rounded-2xl " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos ullam nesciunt tempora a inventore dignissimos qui totam esse reprehenderit optio laudantium aspernatur, quasi quibusdam saepe? Id dolor molestias architecto!</h1>
+    <header class="absolute top-0 left-0 w-full z-50">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    
+    <!-- Logo -->
+    <a class="flex items-center space-x-3">
+      <img
+        class="w-10 h-10 rounded-full object-cover"
+        src="https://www.shutterstock.com/image-vector/travel-point-260nw-437521945.jpg"
+        alt="Travel Point Logo"
+      />
+      <span class="text-2xl font-bold text-white">
+        Travel<span class="text-indigo-400">Point</span>
+      </span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex space-x-8 text-white font-medium">
+      <a href="#" class="hover:text-indigo-300 transition">Home</a>
+      <a href="#" class="hover:text-indigo-300 transition">Destinations</a>
+      <a href="#" class="hover:text-indigo-300 transition">Packages</a>
+      <a href="#" class="hover:text-indigo-300 transition">About Us</a>
+      <a href="#" class="hover:text-indigo-300 transition">Contact Us</a>
+    </nav>
+
+    <!-- Login Button -->
+    <button
+      class="border border-white text-white px-5 py-2 rounded-full hover:bg-white hover:text-indigo-600 transition">
+      Login
+    </button>
+  </div>
+</header>
+
+
+<section
+  class="relative min-h-screen flex items-center bg-cover bg-center"
+  style="background-image: url('https://fortunetours.in/wp-content/uploads/2023/11/Andaman.jpg');"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Hero Content -->
+  <div class="relative container mx-auto px-6">
+    <div class="max-w-xl text-center md:text-left">
+      <h1 class="text-white text-4xl sm:text-5xl font-bold mb-4">
+        Explore the World with Us
+      </h1>
+
+      <p class="text-gray-200 text-lg mb-8">
+        Explore beautiful destinations around the world with us.
+        We make your travel easy, affordable, and unforgettable.
+      </p>
+
+      <button
+        class="inline-flex items-center bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-8 rounded text-lg transition ">
+        Explore Destination →
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="text-gray-600 body-font bg-gray-50">
+  <div class="container px-5 py-20 mx-auto">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+      <h1 class="sm:text-4xl text-3xl font-bold title-font text-gray-900 mb-4">
+        Popular Destinations
+      </h1>
+      <p class="lg:w-2/3 mx-auto text-base leading-relaxed text-gray-600">
+        Explore our most loved travel destinations and choose the perfect tour for your next journey.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Card 1 -->
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="relative overflow-hidden rounded-lg shadow-lg group">
+          <img
+            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_JJxGUwYC_mQTYlmCQtuUiknYk57Ka7OEA&s"
+            alt="Destination"
+          />
+          <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6">
+            <h2 class="text-indigo-300 text-sm uppercase tracking-widest">
+              Beach Tour
+            </h2>
+            <h1 class="text-white text-xl font-semibold mb-2">
+              Goa Trip
+            </h1>
+            <p class="text-gray-200 text-sm">
+              Enjoy beaches, nightlife, and water sports with our special Goa package.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="relative overflow-hidden rounded-lg shadow-lg group">
+          <img
+            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtO63qqYO9IhJRmOIhvB2mlt2njg318tAPCg&s"
+            alt="Destination"
+          />
+          <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6">
+            <h2 class="text-indigo-300 text-sm uppercase tracking-widest">
+              adventure
+            </h2>
+            <h1 class="text-white text-xl font-semibold mb-2">
+              Manali Tour
+            </h1>
+            <p class="text-gray-200 text-sm">
+              Experience snow, mountains, and adventure activities in Manali.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="relative overflow-hidden rounded-lg shadow-lg group">
+          <img
+            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            src="https://funatpuno.com/wp-content/uploads/2025/08/Amer-Fort.webp"
+            alt="Destination"
+          />
+          <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6">
+            <h2 class="text-indigo-300 text-sm uppercase tracking-widest">
+              Heritage Tour
+            </h2>
+            <h1 class="text-white text-xl font-semibold mb-2">
+              Rajasthan
+            </h1>
+            <p class="text-gray-200 text-sm">
+              Discover forts, palaces, and royal culture of Rajasthan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+<div class="lg:w-1/3 sm:w-1/2 p-4">
+  <div class="relative overflow-hidden rounded-lg shadow-lg group">
+    <img
+      class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+      src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww"
+      alt="Kerala Tour"
+    />
+    <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6">
+      <h2 class="text-indigo-300 text-sm uppercase tracking-widest">
+        Nature Tour
+      </h2>
+      <h1 class="text-white text-xl font-semibold mb-2">
+        Kerala
+      </h1>
+      <p class="text-gray-200 text-sm">
+        Enjoy backwaters, greenery, houseboats, and peaceful nature in Kerala.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="lg:w-1/3 sm:w-1/2 p-4">
+  <div class="relative overflow-hidden rounded-lg shadow-lg group">
+    <img
+      class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+      src="https://www.epicyatra.com/wp-content/uploads/2023/08/desktop-wallpaper-gulmarg-and-near-by-gulmarg.jpg"
+      alt="Kashmir Tour"
+    />
+    <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6">
+      <h2 class="text-indigo-300 text-sm uppercase tracking-widest">
+        Hill Station
+      </h2>
+      <h1 class="text-white text-xl font-semibold mb-2">
+        Kashmir
+      </h1>
+      <p class="text-gray-200 text-sm">
+        Experience snow-covered mountains and beautiful valleys of Kashmir.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="lg:w-1/3 sm:w-1/2 p-4">
+  <div class="relative overflow-hidden rounded-lg shadow-lg group">
+    <img
+      class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+      src="https://t4.ftcdn.net/jpg/04/08/25/05/360_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg"
+      alt="Varanasi Tour"
+    />
+    <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6">
+      <h2 class="text-indigo-300 text-sm uppercase tracking-widest">
+        Spiritual Tour
+      </h2>
+      <h1 class="text-white text-xl font-semibold mb-2">
+        Varanasi
+      </h1>
+      <p class="text-gray-200 text-sm">
+        Witness Ganga Aarti and explore one of the oldest spiritual cities in India.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+        Our Travel Services
+      </h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
+        We offer complete travel solutions to make your journey comfortable, safe, and memorable.
+      </p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
+      <!-- Service 1: Tour Packages -->
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+          <!-- Location / Travel Icon -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M12 21s-6-5.33-6-10a6 6 0 1112 0c0 4.67-6 10-6 10z"></path>
+            <circle cx="12" cy="11" r="2"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg font-medium mb-3">Tour Packages</h2>
+          <p class="leading-relaxed text-base">
+            Customized tour packages across India including hill stations, beaches, heritage, and adventure trips.
+          </p>
+          <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 2: Hotel Booking -->
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+          <!-- Hotel Icon -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M3 10h18v11H3z"></path>
+            <path d="M7 10V5h10v5"></path>
+            <path d="M7 21v-3M17 21v-3"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg font-medium mb-3">Hotel Booking</h2>
+          <p class="leading-relaxed text-base">
+            Easy hotel booking with verified stays, affordable prices, and instant confirmation across India.
+          </p>
+          <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 3: Travel Guide -->
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+          <!-- Guide / User Icon -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M5.5 21a6.5 6.5 0 0113 0"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg font-medium mb-3">Travel Guides</h2>
+          <p class="leading-relaxed text-base">
+            Experienced local guides to help you explore destinations safely with cultural and historical insights.
+          </p>
+          <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="flex mx-auto mt-16 text-white bg-blue-500 py-2 px-8 hover:bg-blue-600 rounded text-lg">
+      View All Services
+    </button>
+
+  </div>
+</section>
+
+<section class="text-gray-600 body-font bg-gray-50">
+  <div class="container px-5 py-24 mx-auto flex flex-col lg:flex-row items-center">
+
+    <!-- Left Content -->
+    <div class="lg:w-1/2 w-full lg:pr-12 mb-10 lg:mb-0">
+
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">
+        About Travel Point
+      </h1>
+
+      <p class="leading-relaxed text-base mb-6">
+        Travel Point is a reliable tour and travel company in India, committed to
+        providing comfortable, affordable, and unforgettable travel experiences.
+        We specialize in customized tour packages, hotel bookings, and complete
+        travel planning services.
+      </p>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+
+        <div>
+          <h2 class="text-3xl font-semibold text-indigo-600">5K+</h2>
+          <p class="text-sm text-gray-600">Happy Travelers</p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-semibold text-indigo-600">500+</h2>
+          <p class="text-sm text-gray-600">Tour Packages</p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-semibold text-indigo-600">100+</h2>
+          <p class="text-sm text-gray-600">Destinations</p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-semibold text-indigo-600">10+</h2>
+          <p class="text-sm text-gray-600">Years Experience</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="w-[500px] h-[300px] object-cover"
+>
+      <img 
+        class="rounded-lg shadow-lg object-cover object-center w-full h-80"
+        src="https://kstdc.co/wp-content/themes/kstdc/img/banner-offer-inner.jpg"
+        alt="About Travel Point">
+    </div>
+
+  </div>
+</section>
+<section class="text-gray-600 body-font bg-gray-50">
+  <div class="container px-5 py-24 mx-auto">
+
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold title-font text-gray-900 mb-12 text-center">
+      What Our Customers Say
+    </h1>
+
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Review 1 -->
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-white p-8 rounded-lg shadow-md">
+          <svg fill="currentColor" class="block w-6 h-6 text-indigo-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50z"/>
+          </svg>
+
+          <p class="leading-relaxed mb-6">
+            Our Rajasthan tour was perfectly planned. Hotels, transport, and sightseeing
+            were all well managed. Travel Point made our family trip truly memorable.
+          </p>
+
+          <div class="inline-flex items-center">
+            <img alt="customer" src="https://randomuser.me/api/portraits/men/32.jpg"
+              class="w-12 h-12 rounded-full object-cover">
+            <div class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-semibold text-gray-900">Rahul Mehta</span>
+              <span class="text-gray-500 text-sm">Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-white p-8 rounded-lg shadow-md">
+          <svg fill="currentColor" class="block w-6 h-6 text-indigo-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50z"/>
+          </svg>
+
+          <p class="leading-relaxed mb-6">
+            I booked my Himachal trip through Travel Point and everything was smooth.
+            The team was very supportive and the itinerary was well organized.
+          </p>
+
+          <div class="inline-flex items-center">
+            <img alt="customer" src="https://randomuser.me/api/portraits/women/45.jpg"
+              class="w-12 h-12 rounded-full object-cover">
+            <div class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-semibold text-gray-900">Neha Sharma</span>
+              <span class="text-gray-500 text-sm">Delhi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<section class="bg-gradient-to-r from-indigo-50 via-white to-blue-50 text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Contact Us
+      </h1>
+      <p class="lg:w-2/3 mx-auto text-lg text-gray-500">
+        Plan your perfect journey with us. Get in touch for bookings, queries, or travel assistance.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap -mx-4">
+
+      <!-- Left Info Card -->
+      <div class="lg:w-1/3 md:w-1/2 w-full px-4 mb-8">
+        <div class="bg-white rounded-2xl shadow-xl p-8 h-full">
+
+          <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+            Get In Touch
+          </h2>
+
+          <!-- Address -->
+          <div class="flex items-start mb-5">
+            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+              📍
+            </div>
+            <p>
+              <strong>Address</strong><br>
+              Travel Point, surat, Gujarat, India
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-start mb-5">
+            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+              ✉️
+            </div>
+            <p>
+              <strong>Email</strong><br>
+              travelpoint@gmail.com
+            </p>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start mb-5">
+            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+              📞
+            </div>
+            <p>
+              <strong>Phone</strong><br>
+              +91 98765 43210
+            </p>
+          </div>
+
+          <p class="text-sm text-gray-500 mt-6">
+            Mon – Sat : 10:00 AM – 6:00 PM
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Form Card -->
+      <div class="lg:w-2/3 md:w-1/2 w-full px-4">
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+
+          <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+            Send Us a Message
+          </h2>
+
+          <div class="flex flex-wrap -mx-2">
+            <div class="w-1/2 px-2 mb-4">
+              <label class="text-sm text-gray-600">Full Name</label>
+              <input type="text"
+                class="w-full mt-1 rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none">
+            </div>
+
+            <div class="w-1/2 px-2 mb-4">
+              <label class="text-sm text-gray-600">Email Address</label>
+              <input type="email"
+                class="w-full mt-1 rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none">
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="text-sm text-gray-600">Subject</label>
+            <input type="text"
+              class="w-full mt-1 rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none">
+          </div>
+
+          <div class="mb-6">
+            <label class="text-sm text-gray-600">Message</label>
+            <textarea
+              class="w-full mt-1 rounded-lg border border-gray-300 px-4 py-2 h-32 resize-none focus:ring-2 focus:ring-indigo-400 outline-none"></textarea>
+          </div>
+
+          <button
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition duration-300">
+            Send Message
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+   
+  </div>
+</section>
+
+
+  
+</section>
+<footer class="text-gray-600 body-font bg-gray-100">
+  <div class="container px-5 py-16 mx-auto">
+
+    <!-- Top Footer -->
+    <div class="flex flex-wrap md:text-left text-center">
+
+      <!-- Company Info -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">
+        <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-4">
+          TRAVEL POINT
+        </h2>
+        <p class="text-sm leading-relaxed">
+          Travel Point is your trusted partner for memorable journeys across India.
+          We offer affordable tour packages, hotel bookings, and travel assistance.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">
+        <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-4">
+          QUICK LINKS
+        </h2>
+        <nav class="list-none space-y-2">
+          <li><a class="hover:text-indigo-600 cursor-pointer">Home</a></li>
+          <li><a class="hover:text-indigo-600 cursor-pointer">Destinations</a></li>
+          <li><a class="hover:text-indigo-600 cursor-pointer">Packages</a></li>
+          <li><a class="hover:text-indigo-600 cursor-pointer">About Us</a></li>
+          <li><a class="hover:text-indigo-600 cursor-pointer">Contact Us</a></li>
+        </nav>
+      </div>
+
+      <!-- Popular Destinations -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">
+        <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-4">
+          DESTINATIONS
+        </h2>
+        <nav class="list-none space-y-2">
+          <li>Goa</li>
+          <li>Rajasthan</li>
+          <li>Manali</li>
+          <li>Kashmir</li>
+          <li>Kerala</li>
+        </nav>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">
+        <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-4">
+          NEWSLETTER
+        </h2>
+        <p class="text-sm mb-4">
+          Subscribe to get travel updates and special offers.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="w-full bg-white rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200">
+          <button
+            class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="bg-gray-200">
+    <div class="container px-5 py-4 mx-auto flex flex-col sm:flex-row items-center">
+
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="https://www.shutterstock.com/image-vector/travel-point-260nw-437521945.jpg"
+             class="w-8 h-8 mr-2" alt="logo">
+        <span class="text-lg font-semibold text-gray-900">Travel Point</span>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-sm text-gray-600 sm:ml-6 sm:mt-0 mt-4">
+        © 2025 Travel Point. All rights reserved.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="inline-flex sm:ml-auto sm:mt-0 mt-4 space-x-3">
+        <a class="text-gray-600 hover:text-indigo-600 cursor-pointer">
+          <!-- Facebook -->
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </a>
+        <a class="text-gray-600 hover:text-indigo-600 cursor-pointer">
+          <!-- Twitter -->
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53
+            4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4
+            s-4 9 5 13a11.64 11.64 0 01-7 2
+            c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+          </svg>
+        </a>
+        <a class="text-gray-600 hover:text-indigo-600 cursor-pointer">
+          <!-- Instagram -->
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+            <path d="M17.5 6.5h.01"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
 
 </body>
 </html>
